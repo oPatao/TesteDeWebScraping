@@ -19,8 +19,13 @@ public class Download{
 
         downloadArquivo(Link1,nomeArquivo1);
         downloadArquivo(Link2,nomeArquivo2);
+
+        System.out.println("Arquivos baixados com sucesso");
+
+        
+        
     }
-    public static void downloadArquivo(String link, String nomeArquivo) throws IOException {
+    private static void downloadArquivo(String link, String nomeArquivo) throws IOException {
 
         BufferedInputStream LINK = new BufferedInputStream(new URL(link).openStream());
 
